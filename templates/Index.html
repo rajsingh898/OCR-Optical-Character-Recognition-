@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cards</title>
+</head>
+
+<style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        font-family: arial;
+    }
+
+    .card {
+        width: 22%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px;
+        margin: 5%;
+        height: 23rem;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        background-color: #FFB6D9;
+    }
+
+    .image img {
+        width: 100%;
+        height: 10rem;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+
+    }
+
+    .title {
+
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .des {
+        padding: 3px;
+        text-align: center;
+
+        padding-top: 10px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    button {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+        transition: .5s;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <!--Card 1 -->
+        <div class="card">
+            <div class="image">
+                <img src="ocr3.webp">
+            </div>
+            <div class="title">
+                <h1>OCR</h1>
+            </div>
+            <div class="des">
+                <p>Easily convert scanned Images into searchable and selectable documents.</p>
+                <button onclick="window.location.href='OCR.html'">Explore</button>
+            </div>
+        </div>
+        <!--Card 2 -->
+        <div class="card">
+            <div class="image">
+                <img src="Summarization.gif">
+            </div>
+            <div class="title">
+                <h1>Summarization</h1>
+            </div>
+            <div class="des">
+                <p>We use NLP to locate critical information while maintaining the original context.</p>
+                <button onclick="window.location.href='Summarize.html'">Explore</button>
+            </div>
+        </div>
+        <!--Card 3 -->
+        <div class="card">
+            <div class="image">
+                <img src="qna2.jpg">
+            </div>
+            <div class="title">
+                <h1>Q n A</h1>
+            </div>
+            <div class="des">
+                <p>Generate and extract important questions from documents and images quickly.</p>
+                <button onclick="window.location.href='QNA.html'">Explore</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

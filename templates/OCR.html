@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OCR</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="box1">
+        <div class="card">
+            <form  action="{{url_for('after')}}">
+            <h1>Input</h1>
+            <br>
+            <img src="" alt="No Image Selected" id="profile-pic" >
+            <label for="input-file">Upload Image</label>
+            
+            <input style="visibility:hidden;" type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" value = "Upload Image" >
+            
+            <input type="submit" value ="Extract Text" />
+            
+
+            
+        </form>
+        </div>
+        <div class="box2">
+            <h1>Your Extracted Text</h1>
+        </div>
+    </div>
+    
+    <script>
+        
+        let profilePic = document.getElementById("profile-pic");
+        let inputFile = document.getElementById("input-file");
+        let imageFile = document.getElementById("extract-text");
+        
+        inputFile.onchange = function(){
+            profilePic.src = URL.createObjectURL(inputFile.files[0]);
+        } 
+        
+        
+    </script>
+</body>
+</html>
+
